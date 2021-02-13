@@ -9,26 +9,21 @@ const getHtml = async () => {
     console.error(error);
   }
 };
-
+ 
 getHtml()
   .then(html => {
     let ulList = [];
     const $ = cheerio.load(html.data);
-    const $postNumber = $("tbody").children("tr").children("td");
+    const $postNumber = $("tbody").children("tr");
 
     $postNumber.each(function(i, elem) {
-      ulList[i] = {
-        //   title: $(this).find('strong.news-tl a').text(),
-        //   url: $(this).find('strong.news-tl a').attr('href'),
-        //   image_url: $(this).find('p.poto a img').attr('src'),
-        //   image_alt: $(this).find('p.poto a img').attr('alt'),
-        //   summary: $(this).find('p.lead').text().slice(0, -11),
-        //   date: $(this).find('span.p-time').text()
-        title: $(this).text()
+      postList[i] = {
+        postNumber: $(this).find('td:nth-of-type(1)').text().trim(),
+        content: $(this).find('td:nth-of-type(2)').text().trim()
       };
     });
 
-    const data = ulList.filter(n => n.title);
-    return data;
+    // const data = ulList.filter(n => n.title);
+    return postList;
   })
   .then(res => log(res));
