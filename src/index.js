@@ -12,7 +12,7 @@ const getHtml = async () => {
  
 getHtml()
   .then(html => {
-    let ulList = [];
+    let postList = [];
     const $ = cheerio.load(html.data);
     const $postNumber = $("tbody").children("tr");
 
