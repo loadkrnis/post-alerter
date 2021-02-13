@@ -1,0 +1,39 @@
+[2021-02-13 14:06:01.306] [remoteagent] [info] 
+
+*
+* Visual Studio Code Server
+*
+* Reminder: You may only use this software with Visual Studio family products,
+* as described in the license https://aka.ms/vscode-remote/license
+*
+
+
+[2021-02-13 14:06:01.306] [remoteagent] [info] Extension host agent started.
+[2021-02-13 14:06:01.346] [remoteagent] [info] [127.0.0.1][1949bee9][ManagementConnection] New connection established.
+[2021-02-13 14:06:01.379] [remoteagent] [info] [127.0.0.1][20b35b5f][ExtensionHostConnection] New connection established.
+[2021-02-13 14:06:01.878] [remoteagent] [info] [127.0.0.1][20b35b5f][ExtensionHostConnection] <15013> Launched Extension Host Process.
+[2021-02-13 14:07:00.486] [remoteagent] [info] [127.0.0.1][1949bee9][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+[2021-02-13 14:07:01.508] [remoteagent] [info] [127.0.0.1][20b35b5f][ExtensionHostConnection] <15013> Extension Host Process exited with code: 0, signal: null.
+[2021-02-13 14:07:01.509] [remoteagent] [info] Last EH closed, waiting before shutting down
+[2021-02-13 14:11:45.694] [remoteagent] [info] Got delay-shutdown request while in shutdown timeout, delaying
+[2021-02-13 14:11:45.694] [remoteagent] [info] Cancelling previous shutdown timeout
+[2021-02-13 14:11:45.864] [remoteagent] [info] [127.0.0.1][35d7a25c][ManagementConnection] New connection established.
+[2021-02-13 14:11:45.991] [remoteagent] [info] [127.0.0.1][98cdfdcb][ExtensionHostConnection] New connection established.
+[2021-02-13 14:11:46.000] [remoteagent] [info] [127.0.0.1][98cdfdcb][ExtensionHostConnection] <15398> Launched Extension Host Process.
+[2021-02-13 14:12:03.194] [remoteagent] [info] [127.0.0.1][35d7a25c][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+[2021-02-13 14:12:04.212] [remoteagent] [info] [127.0.0.1][98cdfdcb][ExtensionHostConnection] <15398> Extension Host Process exited with code: 0, signal: null.
+[2021-02-13 14:12:04.212] [remoteagent] [info] Cancelling previous shutdown timeout
+[2021-02-13 14:12:04.212] [remoteagent] [info] Last EH closed, waiting before shutting down
+[2021-02-13 14:12:04.600] [remoteagent] [info] [127.0.0.1][5f54e8d0][ManagementConnection] New connection established.
+[2021-02-13 14:12:04.660] [remoteagent] [error] [File Watcher (node.js)] Error: ENOENT: no such file or directory, stat '/home/ubuntu/.vscode'
+[2021-02-13 14:12:04.679] [remoteagent] [info] [127.0.0.1][8df9b0c1][ExtensionHostConnection] New connection established.
+[2021-02-13 14:12:04.683] [remoteagent] [info] [127.0.0.1][8df9b0c1][ExtensionHostConnection] <15439> Launched Extension Host Process.
+[2021-02-13 14:18:08.095] [remoteagent] [info] New EH opened, aborting shutdown
+[2021-02-13 14:18:08.189] [remoteagent] [info] [127.0.0.1][5f54e8d0][ManagementConnection] The client has disconnected, will wait for reconnection 3h before disposing...
+[2021-02-13 14:18:29.303] [remoteagent] [info] [127.0.0.1][5f54e8d0][ManagementConnection] Another client has connected, will shorten the wait for reconnection 5m before disposing...
+[2021-02-13 14:18:29.304] [remoteagent] [info] [127.0.0.1][f126e45d][ManagementConnection] New connection established.
+[2021-02-13 14:18:29.331] [remoteagent] [info] [127.0.0.1][1c1daa97][ExtensionHostConnection] New connection established.
+[2021-02-13 14:18:29.337] [remoteagent] [info] [127.0.0.1][1c1daa97][ExtensionHostConnection] <16031> Launched Extension Host Process.
+[2021-02-13 14:18:29.358] [remoteagent] [error] [File Watcher (node.js)] Error: ENOENT: no such file or directory, stat '/home/ubuntu/.vscode'
+[2021-02-13 14:18:49.279] [remoteagent] [info] [127.0.0.1][f126e45d][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+[2021-02-13 14:18:51.494] [remoteagent] [info] [127.0.0.1][1c1daa97][ExtensionHostConnection] <16031> Extension Host Process exited with code: 0, signal: null.
