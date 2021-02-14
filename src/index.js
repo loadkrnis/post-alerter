@@ -42,12 +42,14 @@ setInterval(function () {
           maxPostNumber++;
           console.log("새로운 게시물 발생\n게시물번호 : " + postList[i].postNumber + "\n게시물 : " + postList[i].content);
           data = {
-            type: 'SMS',
-            text: '[지민노예봇]\n지민공주님!\n\"' + postList[i].content + '\"\n라는 새로운 채용공고가 올라왔습니다.',
-            to: '01042614444',
-            from: '01042614444'
+            type: 'LMS',
+            text: '[지민노예봇]\n지민공주님! \"' + postList[i].content + '\"라는 새로운 채용공고가 올라왔습니다. 확인해주세요!!! 오늘 하루도 화이팅하세요!\n사랑해요!\n-지민노예 올림',
+            to: key.phoneNumber,
+            from: key.phoneNumber
           };
-          // send(data);
+          send(data);
+          data.to = key.targetNumber;
+          send(data);
         }
       });
       return postList;
