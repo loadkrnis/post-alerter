@@ -1,9 +1,9 @@
 {
-  "apiKey": "NCSMQ16BEMIBHLCG",
-  "apiSecret": "QQEUWNUOMWSLFNEJQ05D2ABQE5NDFXPE",
-  "domain": "api.coolsms.co.kr",
-  "prefix": "",
-  "protocol": "https",
-  "accessToken": "",
-  "phoneNumber": "01042614444"
+    "apiKey": "NCSMQ16BEMIBHLCG",
+    "apiSecret": "QQEUWNUOMWSLFNEJQ05D2ABQE5NDFXPE",
+    "domain": "api.coolsms.co.kr",
+    "prefix": "",
+    "protocol": "https",
+    "accessToken": "",
+    "phoneNumber": "01042614444"
 }
