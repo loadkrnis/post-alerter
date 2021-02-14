@@ -1,8 +1,19 @@
 const axios = require("axios");
 const cheerio = require("cheerio");
 const log = console.log;
+const { config, Group } = require('../')
 
-var maxPostNumber = 28;
+
+var maxPostNumber = 30;
+
+config.init({
+  apiKey: 'NCSMQ16BEMIBHLCG',
+  apiSecret: 'QQEUWNUOMWSLFNEJQ05D2ABQE5NDFXPE'
+});
+
+async function send(message, agent = {}) {
+  console.log(await Group.sendSimpleMessage(message, agent))
+}
 
 let getHtml = async () => {
   try {
@@ -28,6 +39,16 @@ setInterval(function () {
         if (maxPostNumber + 1 == parseInt(postList[i].postNumber)) {
           maxPostNumber++;
           console.log("새로운 게시물 발생\n게시물번호 : " + postList[i].postNumber + "\n게시물 : " + postList[i].content);
+          try {
+             send({
+              type: 'SMS',
+              text: '[지민노예봇]\n지민공주님! "' + postList[i].content + '"라는 새로운 게시글이 올라왔습니다.',
+              to: '01042614444',
+              from: '01042614444'
+            });
+          } catch (error) {
+            console.error(error);
+          }
         }
       });
 
