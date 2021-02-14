@@ -2,13 +2,12 @@ const axios = require("axios");
 const cheerio = require("cheerio");
 const log = console.log;
 const { config, Group } = require('../')
-const keyConfig = require('../config.json')
-console.log(keyConfig);
+const key = require('../config.json') //api키
 var maxPostNumber = 30;
 
 config.init({
-  apiKey: keyConfig.apiKey,
-  apiSecret: keyConfig.apiSecret
+  apiKey: key.apiKey,
+  apiSecret: key.apiSecret
 });
 
 async function send(message, agent = {}) {
