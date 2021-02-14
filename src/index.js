@@ -3,6 +3,7 @@ const cheerio = require("cheerio");
 const log = console.log;
 const { config, Group } = require('../')
 const key = require('../config.json') //api키
+const moment = require('moment'); 
 var maxPostNumber = 31;
 
 config.init({
@@ -54,9 +55,5 @@ setInterval(function () {
       });
       return postList;
     })
-    .then(res => log("현재 최대 게시물 번호 : " + maxPostNumber));
+    .then(res => log("현재 최대 게시물 번호 : " + maxPostNumber + "  -  " + moment().format("YYYY-MM-DD HH:mm:ss")));
 }, 3600000);
-
-module.exports = {
-  getHtml
-}
