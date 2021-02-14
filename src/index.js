@@ -36,7 +36,7 @@ setInterval(function () {
     })
     .then(res => log("현재 최대 게시물 번호 : " + maxPostNumber));
 
-}, 10000000);
+}, 2000);
 
 module.exports = {
   getHtml
