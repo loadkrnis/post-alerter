@@ -2,7 +2,8 @@ const axios = require("axios");
 const cheerio = require("cheerio");
 const { config, Group } = require('../')
 const key = require('../config.json') //api키
-const moment = require('moment'); 
+const moment = require('moment');
+const log = console.log;
 var maxPostNumber = 31;
 require('moment-timezone');
 moment.tz.setDefault("Asia/Seoul");
