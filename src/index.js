@@ -1,10 +1,13 @@
 const axios = require("axios");
 const cheerio = require("cheerio");
-const log = console.log;
 const { config, Group } = require('../')
 const key = require('../config.json') //api키
 const moment = require('moment'); 
 var maxPostNumber = 31;
+require('moment-timezone');
+moment.tz.setDefault("Asia/Seoul");
+
+console.log("Server started at " + moment().format("YYYY-MM-DD HH:mm:ss"));
 
 config.init({
   apiKey: key.apiKey,
