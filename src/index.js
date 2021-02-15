@@ -59,4 +59,4 @@ setInterval(function () {
       return postList;
     })
     .then(res => log("Current Post Number:[" + maxPostNumber + "]  -  " + moment().format("YYYY-MM-DD HH:mm:ss")));
-}, 3600000);
+}, 300000);
