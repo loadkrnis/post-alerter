@@ -79,4 +79,4 @@ setInterval(function () {
 ![](https://images.velog.io/images/charming__kyu/post/62d9d521-02b0-4580-adc6-be0a43c40bd2/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202021-02-15%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%204.57.26.png) 문자서비스는 **coolsms**를 사용했다. crypto-js의 HmacSHA256를 사용해 apikey인증을 해야하지만 저번 프로젝트에서 쿠팡api를 이용할 때 Hmac/SHA256을 이용한 사용자 인증을 해봤기에 손쉽게 추가가 가능했다. 문자전송 기능을 추가 후 마지막으로 setInterval로 주기적인 반복을 만들고 끝!
 <br/>
 
-> **블로그 주소 = > https://velog.io/@charming__kyu/postAlerter**
+> **블로그 주소 = > https://velog.io/@charming__kyu/**
