@@ -48,7 +48,7 @@ setInterval(function () {
           console.log("[새로운 게시물 발생] 게시물번호:[" + postList[i].postNumber + "] 게시물:[" + postList[i].content + "]");
           data = {
             type: 'LMS',
-            text: '[지민노예봇]\n지민공주님! \"' + postList[i].content + '\"라는 새로운 채용공고가 올라왔습니다. 확인해주세요!!! 오늘 하루도 화이팅하세요!\n사랑해요!\n-지민노예 올림',
+            text: '[지민노예]\n공주님 \"' + postList[i].content + '\"라는 새로운 채용공고가 올라왔습니다. 확인해주세요. 오늘도 정말 많이 사랑해요.\n-지민노예 올림\n게시물 보러가기 https://www.bc.ac.kr/user/nd70345.do',
             to: key.phoneNumber,
             from: key.phoneNumber
           };
